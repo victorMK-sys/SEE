@@ -12,5 +12,5 @@ elif operation == "*":
   result = num1 * num2
 elif operation == "/":
   result = num1 / num2
-
+  
 print(f"{num1} {operation} {num2} = {result}")
