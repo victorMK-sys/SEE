@@ -1,0 +1,399 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  transition: 0.25s ease;
+}
+
+.link-btn {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  background-color: hsl(0, 0%, 10%);
+  padding: 10px 15px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.link-btn:hover {
+  color: hsl(16, 100%, 50%);
+  box-shadow: 0 0 10px hsl(0, 0%, 20%);
+}
+
+body {
+  padding: 0 2px;
+  position: relative;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+body header {
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  padding: 5px 10px;
+  position: sticky;
+  top: 0;
+  border-radius: 5px;
+  z-index: 100;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo {
+  font-family: monospace;
+  color: hsl(0, 0%, 20%);
+  font-size: 28px;
+  padding: 5px;
+  font-weight: 700;
+}
+
+nav .nav-links ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links ul a {
+  font-weight: 700;
+  color: hsl(0, 0%, 20%);
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: hsl(16, 100%, 50%);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  padding: 95px 50px;
+}
+
+.hero img {
+  width: 320px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px hsl(0, 0%, 20%);
+}
+
+.hero img:hover {
+  transform: scale(1.025);
+}
+
+.hero-info h1 {
+  font-size: 50px;
+  color: hsl(16, 100%, 50%);
+  margin-bottom: 15px;
+}
+
+.hero-info h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero-info p {
+  color: hsl(0, 0%, 15%);
+  max-width: 630px;
+  line-height: 35px;
+}
+
+.about h3,
+.about .education h3,
+.tech-stack h3,
+.projects .project-card h3,
+.contact h3 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: hsl(16, 100%, 50%);
+}
+
+.about {
+  background-color: hsl(0, 0%, 5%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.about-main {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  margin-bottom: 50px;
+}
+
+.ab-main-img img {
+  width: 175px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.ab-main-intro {
+  padding: 10px 20px;
+}
+
+.ab-main-intro p {
+  max-width: 675px;
+  font-size: 16px;
+  line-height: 32px;
+  color: hsl(0, 0%, 90%);
+}
+
+.ab-main-intro h4 {
+  font-size: 20px;
+  margin-top: 32px;
+  color: hsl(211, 100%, 50%);
+}
+
+.education h4 {
+  color: hsl(0, 0%, 65%);
+  margin-bottom: 10px;
+}
+
+.education .education-el {
+  margin-bottom: 20px;
+  background-color: hsl(0, 0%, 8%);
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.about a {
+  background-color: hsl(0, 0%, 90%);
+  color: black;
+}
+
+.about a:hover {
+  color: hsl(16, 100%, 50%);
+  box-shadow: 0 0 10px hsl(0, 0%, 50%);
+}
+
+
+.tech-stack {
+  background-color: hsl(0, 0%, 100%);
+  padding: 60px 20px;
+}
+
+.tech-stack .techTools {
+  display: grid;
+  grid-template-columns: 150px 150px;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.techTools p {
+  background-color: hsl(0, 0%, 90%);
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.ambitions {
+  max-width: 800px;
+  text-align: left;
+  background: hsl(0, 0%, 90%);
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  border-left: 3px solid hsl(16, 100%, 50%);
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  line-height: 26px;
+}
+
+.projects .project-card {
+  background-color: hsl(0, 0%, 95%);
+  padding: 25px;
+  max-width: 500px;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  border-left: 4px solid hsl(16, 100%, 50%);
+  box-shadow: 0 0 10px hsl(0, 0%, 0%);
+  border-radius: 8px;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: hsl(16, 100%, 50%);
+}
+
+.projects .p-tech {
+  display: inline-block;
+  margin: 10px 5px 0 0;
+  background-color: hsl(16, 100%, 50%);
+  padding: 7px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+
+body .contact {
+  max-width: 800px;
+  margin: auto;
+  padding-bottom: 100px;
+}
+
+.contact h3 {
+  margin-top: 20px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  color: hsl(0, 0%, 96%);
+  border: 1px solid hsl(0, 0%, 27%);
+  padding: 10px;
+  font-size: 17px;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: hsl(16, 100%, 50%);
+  outline: none;
+  box-shadow: 0 0 5px hsl(16, 100%, 25%);
+}
+
+form button {
+  align-self: flex-start;
+  background-color: hsl(16, 100%, 50%);
+  color: hsl(0, 0%, 95%);
+  font-weight: 700;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+form button:hover {
+  box-shadow: 0 0 5px hsl(0, 0%, 50%);
+  color: hsl(0, 0%, 0%);
+}
+
+footer {
+  background-color: hsl(0, 0%, 4%);
+  color: hsl(0, 0%, 96%);
+  padding: 25px;
+  text-align: center;
+  border-top: 1px solid hsl(0, 0%, 13%);
+  font-size: 15px;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: hsl(16, 100%, 50%);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-shadow: 0 0 5px hsl(16, 100%, 25%);
+}
+
+@media (max-width: 768px) {
+  header {
+    max-width: 300px;
+  }
+
+  nav {
+    max-width: 300px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav .nav-links ul {
+    visibility: hidden;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .hero-info h1 {
+    font-size: 32px;
+  }
+
+  .hero-info h2 {
+    font-size: 24px;
+  }
+
+  .hero img {
+    width: 200px;
+    height: auto;
+  }
+
+  .about {
+    padding: 30px 15px;
+  }
+
+  .about-main {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .ab-main-intro p {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .tech-stack .techTools p {
+    grid-template-columns: 1fr;
+    justify-items: left;
+  }
+
+  .projects .project-card {
+    max-width: 100%;
+    margin: 20px 0;
+  }
+
+  .ambitions {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .contact form input,
+  .contact form textarea {
+    width: 100%;
+  }
+
+  .link-btn,
+  .cvlink {
+    text-align: center;
+    display: block;
+    margin: 20px auto 0 auto;
+  }
+
+  footer {
+    padding: 20px 10px;
+    font-size: 14px;
+  }
+}
