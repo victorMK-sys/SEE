@@ -54,7 +54,7 @@ calcScore()
 print("-------------------------------------------")
 
 print(qweries[2])
-print("A. integer")
+print("A. number")
 print("B. dictionary")
 print("C. string")
 print("D. None of the above")
